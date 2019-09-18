@@ -18,9 +18,6 @@ import org.springframework.data.jpa.repository.Query;
 @Repository
 public interface CalendarRepository extends JpaRepository<CalendarByAction, Integer>{
     
-//    @Transactional
-//    @Modififying
-    
     @Query(value= "SELECT IdUser,Activity,Date FROM calendar WHERE IdUser =?1 AND Date BETWEEN ?2 AND ?3 ",nativeQuery =true)    
     public List<Object[]> selectUserById (int idUser,Date dateStart, Date dateEnd); 
     

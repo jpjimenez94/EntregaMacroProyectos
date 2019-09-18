@@ -4,6 +4,7 @@ com\macro\api\CalendarController.class
 com\macro\domain\Response.class
 com\macro\services\CalendarServiceImpl.class
 com\macro\services\UserServiceImpl.class
+com\macro\SwaggerConfiguration.class
 com\macro\domain\CalendarByAction.class
 com\macro\services\UserService.class
 com\macro\Persistence\UserRepository.class
